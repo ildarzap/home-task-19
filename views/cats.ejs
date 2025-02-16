@@ -1,0 +1,8 @@
+<%- include("layouts/header") %>
+<h1>Случайные котики 🐱</h1>
+<div class="gallery">
+  <% cats.forEach(cat => { %>
+  <img src="<%= cat.url %>" alt="Котик" class="cat-img" />
+  <% }) %>
+</div>
+<%- include("layouts/footer") %>
